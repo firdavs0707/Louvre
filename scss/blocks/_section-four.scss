@@ -154,24 +154,22 @@
      max-width: 520px;
      max-height: 500px;
   }
-
-  .part-one-heading {
-    width: 367px;
-    height: 60px;
-    font-family: 'Forum';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
 }
 
 @include breakpoint-down(535px) {
   .inner-img{
      max-width: 420px;
      max-height: 420px;
+  }
+}
+
+@include breakpoint-down(460px) {
+  .inner-img{
+     max-width: 350px;
+     max-height: 400px;
+  }
+
+  .inner-big-div__heading {
+    max-width: 320px;
   }
 }
