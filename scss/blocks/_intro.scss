@@ -1,0 +1,120 @@
+.intro__inner {
+  padding: 75px 0;
+}
+
+.intro__title {
+  @include font-styles($l-height: 90px, $f-size: 80px, $f-weight: 400);
+  margin: 0;
+  margin-bottom: 25px;
+  // font-weight: 400;
+  // font-size: 80px;
+  // line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.intro__hr {
+  margin: 0;
+  height: 3px;
+  background-color: $hr-color;
+}
+
+.intro__list {
+  @include list-unstyled;
+  @include flex-starter;
+  flex-wrap: wrap;
+}
+
+.intro__item {
+  margin-top: 75px;
+}
+
+.intro__item-img {
+  display: block;
+  width: 440px;
+  height: 285px;
+}
+
+.intro__item-heading {
+  @include font-styles($l-height: 35px, $f-size: 32px, $f-weight: 400);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  // font-weight: 400;
+  // font-size: 32px;
+  // line-height: 35px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.intro__item-hr {
+  margin: 0;
+  max-width: 300px;
+  height: 2px;
+  background-color: $hr-color;
+  border: none;
+}
+
+.intro__item-tour {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.intro__item-view {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@include breakpoint-down(940px) {
+  .intro__title {
+    @include font-styles($l-height: 75px, $f-size: 50px, $f-weight: 400);
+    margin-bottom: 20px;
+  }
+
+  .intro__list {
+    justify-content: space-around;
+    // align-items: center;
+    // flex-direction: column;
+  }
+
+  .intro__item {
+    margin-top: 60px;
+    max-width: 330px;
+  }
+
+  .intro__item-img {
+    display: block;
+    width: 330px;
+    height: 215px;
+  }
+
+  .intro__item-heading {
+    @include font-styles($l-height: 31px, $f-size: 28px, $f-weight: 400);
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  .intro__item-hr {
+    max-width: 150px;
+  }
+}
+
+@include breakpoint-down(460px) {
+  .intro__title{
+    width: 350px;
+    height: 40px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+  }
+}

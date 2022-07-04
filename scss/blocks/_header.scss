@@ -1,0 +1,320 @@
+.header{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #030303;
+}
+
+.section-one{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.list__item{
+  margin-right: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.list__item:hover {
+  color: #9D8665;
+  cursor: pointer;
+}
+
+.section-one__logo-img{
+  transition: transform 1.2s ease;
+}
+
+.section-one__logo-img:hover {
+  transform: scale(1.3);
+}
+
+.list__item--last:active{
+  color: #7E6C51;
+}
+
+.list__item:active{
+  color: #7E6C51;
+}
+
+.list__item--last:hover {
+  color: #9D8665;
+  cursor: pointer;
+}
+
+
+.list__item--last{
+  margin-right: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.section-two{
+  @include flex-starter;
+  align-items: center;
+}
+
+.section-two__heading{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.sectino-two__img{
+  background-image: url("../../img/mona-lisa.png");
+  width: 1000px;
+  height: 750px;
+}
+  
+.button{
+  width: 360px;
+  height: 75px;
+  background: #710707;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding-left: 64px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #9D8665;
+}
+
+.button:active {
+  transform: scale(1.05);
+}
+
+.paragraf{
+  width: 445px;
+  height: 33px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.chizburger{
+  display: none;
+}
+
+@include breakpoint-down(1470px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 950px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1420px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 900px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1370px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 850px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1320px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 800px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1270px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 750px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1220px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 700px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1170px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 650px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down(1120px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 600px;
+    height: 750px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .chizburger{
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .part-two{
+    display: none;
+  }
+
+  .section-two__text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragraf{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .section-two__heading{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+
+  .section-two{
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@include breakpoint-down(610px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 550px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+}
+
+@include breakpoint-down(533px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 450px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .section-two__heading {
+    width: 248px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .paragraf {
+    width: 306px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+}
+
+@include breakpoint-down(477px) {
+  .sectino-two__img{
+    background-image: url("../../img/mona-lisa.png");
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .button{
+    width: 300px;
+  }
+
+  .section-two__text {
+    width: 300px;
+  }
+}

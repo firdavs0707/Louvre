@@ -1,0 +1,26 @@
+// Unstyled list
+@mixin list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Starter flex
+@mixin  flex-starter {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Styles of font
+@mixin font-styles($f-weight, $f-size, $l-height) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+}
+
+// Responsive breakpoint down
+@mixin breakpoint-down($screen-size) {
+  @media only screen and (max-width: $screen-size) {
+    @content;
+  }
+}
