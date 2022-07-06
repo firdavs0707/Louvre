@@ -1,0 +1,263 @@
+.buy-box-title {
+  @include font-style(400, 80px, 90px);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+  margin: 0;
+}
+
+.buy-hr {
+  background-color: #710707;
+  height: 3px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.buy-wrapper {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.form-text {
+  @include font-style(700, 28px, 33px);
+  margin: 0;
+  margin-bottom: 50px;
+  margin-left: 60px;
+}
+
+.buy-label {
+  @include font-style(300, 22px, 26px);
+  display: flex;
+  flex-direction: row-reverse;
+  width: 270px;
+  height: 26px;
+  margin-bottom: 25px;
+}
+
+.buy-input {
+  margin-right: 23px;
+}
+
+.buy-wrapper-one {
+  margin-left: 240px;
+}
+
+.wrapper-one-text {
+  @include font-style(700, 28px, 33px);
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.text-one {
+  @include font-style(300, 22px, 26px);
+  margin: 0;   
+  margin-bottom: 21px;
+}
+
+.text-two {
+  @include font-style(700, 28px, 33px);
+  margin: 0;
+  margin-top: 56px;
+}
+
+.buy-link {
+  @include font-style(300, 22px, 26px);
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 10px 38px;
+  background-color: #000;
+  border-radius: 2px;
+  text-decoration: none;
+  width: 175px;
+}
+
+.buy-link:hover {
+  color: #000;
+  background: #9d8665;
+  border-radius: 2px;
+}
+
+.parallax-img {
+  width: 1920px;
+  height: 400px;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 1415px) {
+  
+  .buy-wrapper-one {
+    margin-left: 150px;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+  
+  .buy-wrapper-one {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1274px) {
+  
+  .buy-wrapper-one {
+    margin-left: 100px;
+  }
+
+  .buy-img {
+    width: 700px;
+    height: 440px;
+  }
+} 
+
+@media only screen and (max-width: 1245px) {
+  
+  .buy-wrapper-one {
+    margin-left: 80px;
+  }
+
+  .buy-img {
+    width: 700px;
+    height: 440px;
+  }
+
+  .form {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 950px) {
+  
+  .buy-wrapper-one {
+    margin-left: 60px;
+  }
+
+  .buy-img {
+    width: 444px;
+    height: 344px;
+  }
+
+  .buy-link {
+    width: 175px;
+    display: block;
+    margin-top: 40px;
+  }
+} 
+
+@media only screen and (max-width: 705px) {
+  
+  .buy-wrapper-one {
+    margin-left: 60px;
+  }
+
+  .buy-img {
+    width: 444px;
+    height: 344px;
+  }
+
+  .buy-link {
+    width: 175px;
+    display: block;
+    margin-top: 40px;
+  }
+
+  .buy-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+@media only screen and (max-width: 505px) {
+
+   .buy-box-title {
+    @include  font-style(400, 28px, 40px) ;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9d8665;
+   }
+  
+  .buy-wrapper-one {
+    margin: 0;
+  }
+
+  .buy-img {
+    width: 320px;
+    height: 180px;
+  }
+
+  .buy-link {
+    width: 175px;
+    display: block;
+    margin-top: 40px;
+  }
+
+} 
+
+@media only screen and (max-width: 1400px) {
+   
+  .parallax-img {
+    width: 1024px;
+    height: 400px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 986px) {
+   
+  .parallax-img {
+    width: 768px;
+    height: 300px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 718px) {
+   
+  .parallax-img {
+    width: 420px;
+    height: 300px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+   
+  .parallax-img {
+    width: 320px;
+    height: 200px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+   
+  .parallax-img {
+    width: 220px;
+    height: 100px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
